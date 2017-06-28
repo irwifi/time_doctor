@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Setting default text color, background and a font stack */
+  font-size: 12px;
+  color: #666;
+  /* A webkit gradient: */
+  /*background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#DDD));*/
+  text-shadow: 1px 1px 0 white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Blinking Animation*/
+@keyframes blinker {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+#login {
+  width: 240px;
+  height: 170px;
+  text-align: center;
+  padding: 10px;
+}
+
+.logo {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../images/TimeDoctor.png) center no-repeat;
+  background-size: 50px;
+}
+
+.login_text {
+  font-size: 13px;
+}
+
+.login_info {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#login input {
+  margin-top: 10px;
+  width: 190px;
+  height: 16px;
+  padding: 5px;
+  background: #F8F8F8;
+  border: 1px solid #DDD;
+}
+
+/* Class for attaching blinking animation */
+.blinking_input {
+  border: 1px solid #F00;
+  animation: blinker 300ms linear 3;
+}
+
+.btn_login {
+  display: block;
+  margin: 10px auto;
+  background: #71da47;
+  padding: 10px;
+  color: #FFF;
+  width: 80px;
+  height: 34px;
+  line-height: 8px;
+  font-size: 14px;
+  border: none;
+}
+
+.btn_login:hover {
+  background: #50bb26;
+  font-weight: bold;
+}

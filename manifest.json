@@ -1,0 +1,10 @@
+{
+    "manifest_version": 2,
+    "name": "Time Doctor Demo",
+    "version": "1.0",
+    "description": "Demo for Time Doctor extension.",
+    "browser_action":   {
+        "default_icon": "images/TimeDoctor.png",
+        "default_popup": "index.html"
+    }
+}
