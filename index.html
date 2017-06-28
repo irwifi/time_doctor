@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="styles/index.css" />
   <script src="scripts/jquery-3.2.1.slim.min.js"></script>
   <script src="scripts/index.js"></script>
@@ -17,6 +18,40 @@
       <input type="text" name="username" placeholder="Username" class="input_username" />
       <input type="password" name="password" placeholder="Password" class="input_password" />
       <button class="btn_login">LOG IN</button>
+    </div>
+  </div>
+
+  <!-- Logged Window -->
+  <div id="logged_window">
+    <div class="header">
+      <div class="logo"></div>
+      <i class="fa fa-sign-out fa-2x"></i>
+      <i class="fa fa-cog fa-2x"></i>
+    </div>
+
+    <div id="dashboard">
+      <div class="job_buttons">
+        <div class="btn_job btn_job_new">Start new</div>
+        <div class="btn_job btn_job_last">Continue latest</div>
+      </div>
+
+      <div class="recent_logs">
+        <div class="recent_title">Recent entries</div>
+        <div class="logs_list">
+          <div class="logs">
+            Job 1
+            <div class="time">0:24</div>
+          </div>
+          <div class="logs">
+            Job 2
+            <div class="time">1:03</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="website" title="https://www.timedoctor.com/">Go to website</div>
     </div>
   </div>
 </body>

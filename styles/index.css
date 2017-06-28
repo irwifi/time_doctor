@@ -1,3 +1,4 @@
+/* Root >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
+/* Root <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
+/* Login >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* Blinking Animation*/
 @keyframes blinker {
   50% {
@@ -22,13 +25,14 @@ body {
 }
 
 #login {
+  display: none;
   width: 240px;
   height: 170px;
   text-align: center;
   padding: 10px;
 }
 
-.logo {
+#login .logo {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -77,3 +81,89 @@ body {
   background: #50bb26;
   font-weight: bold;
 }
+/* Login <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* Logged Window >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#logged_window {
+  display: none;
+  width: 220px;
+  padding: 4px;
+}
+
+#logged_window .header {
+  height: 38px;
+  margin-bottom: 8px;
+}
+
+#logged_window .logo {
+  float: left;
+  width: 38px;
+  height: 38px;
+  background: url(../images/TimeDoctor.png) no-repeat center;
+  background-size: 38px;
+}
+
+.fa {
+  float: right;
+  margin: 10px 0 0 12px;
+  cursor: pointer;
+}
+
+.fa:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+
+.website {
+  text-align: right;
+  cursor: pointer;
+}
+
+.website:hover {
+  color:#000;
+  text-decoration: underline;
+}
+/* Logged Window <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* Dashboard >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#dashboard {
+  margin: 5px 0;
+}
+
+.job_buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_job {
+  padding: 8px 0;
+  color: #333;
+  background: #f3fff3;
+  display: inline;
+  text-align: center;
+  width: 104px;
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+  cursor: pointer;
+}
+
+.btn_job:hover {
+  background: #DDD;
+}
+
+.recent_title {
+  margin: 10px 0 5px;
+  text-align: center;
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 8px;
+}
+
+.logs {
+  padding: 5px 10px;
+}
+
+.time {
+  display: inline;
+  float: right;
+}
+/* Dashboard <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
